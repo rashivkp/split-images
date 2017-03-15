@@ -6,8 +6,29 @@ I am using this to convert my pdf notes to kindle friendly dimensions.
 
 ### split.sh
 splits all images in a path
-Usage: splip.sh path/
+Usage: ./split.sh path/
 
 ### split_file.sh
 split selected images
-Usage: splip.sh path/ filename.jpg
+Usage: split.sh path/ filename.jpg
+
+
+### gThumb Parameters
+
+Tools->Personalize->new
+
+split.sh
+```
+    bash /path/to/split.sh %P
+    terminal command                - yes
+    execute command for every file  - no
+    wait for command to finish      - yes
+```
+
+split_file.sh
+```
+    bash /path/to/split_file.sh %P %N%E
+    terminal command                - yes
+    execute command for every file  - yes
+    wait for command to finish      - yes
+```
